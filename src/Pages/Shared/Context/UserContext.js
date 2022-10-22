@@ -33,8 +33,11 @@ const UserContext = ({children}) => {
     const logIn=(email,password)=>{
      return signInWithEmailAndPassword(auth, email, password)
     }
+    const updateProfile=(profile)=>{
+      return updateProfile(auth.currentUser,profile)
+    }
 
-    const authInfo={user,createUser,logOut,signIn,logIn}
+    const authInfo={user,createUser,logOut,signIn,logIn,updateProfile}
     return (
        <AuthContext.Provider value={authInfo}>
          {children}

@@ -4,6 +4,7 @@ import Category from "../Pages/Category/Category/Category";
 import Home from "../Pages/Home/Home/Home";
 import Login from "../Pages/Login/Login";
 import News from "../Pages/News/News/News";
+import Terms from "../Pages/Others/Terms";
 import Register from "../Pages/Register/Register";
 import PrivateRoute from "../Routes/PrivateRoute";
 
@@ -34,6 +35,10 @@ import PrivateRoute from "../Routes/PrivateRoute";
          {
             path:'/register',
             element:<Register/>
+         },
+         {
+            path:'/terms',
+            element:<Terms></Terms>
          }
        ]
     }
